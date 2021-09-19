@@ -25,7 +25,26 @@ class menu : AppCompatActivity() {
 
         //Button resta//
 
-        
+        var op_resta = findViewById<Button>(R.id.op_resta)
+        op_resta.setOnClickListener{
+            val accion3 = Intent(this, resta::class.java)
+            startActivity(accion3)
+        }
+
+
+        var op_divi = findViewById<Button>(R.id.op_divi)
+        op_divi.setOnClickListener{
+            val accion4 = Intent(this, division::class.java)
+            startActivity(accion4)
+        }
+
+
+        var op_multi = findViewById<Button>(R.id.op_multi)
+        op_multi.setOnClickListener{
+            val accion5 = Intent(this, multiplicacion::class.java)
+            startActivity(accion5)
+        }
+
 
     }
 }
